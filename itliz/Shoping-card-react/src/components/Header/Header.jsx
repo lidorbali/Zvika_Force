@@ -5,7 +5,8 @@ import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import { Link, useLocation } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
-import ZvikaForceLogo from "../../STATIC"
+import ZvikaForceLogo from "../../STATIC/imges/ZvikaForceLogo.jpg"
+
 
 
 function Header() {

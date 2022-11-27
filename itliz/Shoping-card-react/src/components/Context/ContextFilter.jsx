@@ -1,11 +1,15 @@
 import React, { createContext, useReducer } from "react";
-import allProducts from "../../Data";
+import allProducts from "../../Data"; 
+import axios from 'axios';
+
+const ProductDB = 'http://127.0.0.1:8000/products/'
+
+
 
 const initialFilterState = {
   filteredItems: [...allProducts],
   searchKey: ""
 };
-
 const filterItemsHandler = (key) => {
   const filteredItems = allProducts.filter((product) => {
     return product.category === key;
